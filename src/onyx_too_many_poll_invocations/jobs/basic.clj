@@ -38,11 +38,11 @@
     ;; TODO: why is it invoked so many times after it is marked as completed?
     (if (> @page 5)
       (do
-        (prn "returning nil because we're past the last page")
+        (prn "poll! returning nil because we're past the last page")
         (reset! completed? true)
         nil)
       (do
-        (prn "returning segments")
+        (prn "poll! returning segments")
         (swap! page inc)
         [{:n 1}]))))
 

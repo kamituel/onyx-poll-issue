@@ -1,6 +1,9 @@
 # onyx-too-many-poll-invocations
 
-An Onyx application that does distributed things. This project has been
-populated with a sample job and some basic Onyx idioms to make development
-a bit easier to get started.
+Invoke:
 
+    $ lein run > out.txt
+
+then wait for the file to get populated. It will contain thousands of print statements
+coming from `poll!`, even thogh only few are expected. Once in a while it will also have
+print statements indicating clearly that `completed?` was returning `true` almost all the time.
