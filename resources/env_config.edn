@@ -1,0 +1,6 @@
+
+ {:onyx/tenancy-id "1"
+  :zookeeper/address "127.0.0.1:3188"
+  :zookeeper/server? true
+  :zookeeper.server/port 3188
+  :onyx.log/config nil}
